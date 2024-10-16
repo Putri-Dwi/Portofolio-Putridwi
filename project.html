@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+        font-family: 'Poppins', sans-serif;
+        background-color: #f0f4f8;
+    }
+    .header {
+        background: linear-gradient(90deg, rgba(26, 26, 29, 0.9), rgba(255, 102, 0, 0.9));
+        color: white; /* Change text color for better contrast */
+        padding: 10px 0;
+        border-radius: 10px 10px 0 0; /* Rounded top corners */
+        text-align: center;
+        margin-bottom: -30px; /* Negative margin to pull it into the body */
+        position: relative;
+        z-index: 1;
+        opacity: 0; /* Start hidden */
+        transform: translateY(-20px); /* Start off slightly above */
+        animation: fadeInUp 0.8s forwards; /* Animation */
+    }
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0); /* Slide down to its original position */
+            }
+        }
+        .header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        .header p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .header a {
+        display: inline-block; /* Make the link behave like a button */
+        padding: 10px 20px; /* Add some padding for a button-like appearance */
+        border: 2px solid transparent; /* Initial border */
+        border-radius: 5px; /* Rounded corners */
+        background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent background */
+        color: white; /* Text color */
+        font-weight: bold;
+        transition: all 0.3s; /* Smooth transition */
+        text-align: center; /* Center the text */
+    }
+    .header a:hover {
+        background-color: rgba(255, 255, 255, 0.5); /* Change background on hover */
+        border: 2px solid #ffd700; /* Border color on hover */
+        color: white; /* Change text color on hover */
+    }
+    .header a:active {
+        background-color: rgba(255, 255, 255, 0.7); /* Darker background when clicked */
+        border: 2px solid #ffc107; /* Change border color when clicked */
+        color: white; /* Change text color when clicked */
+    }
+        .main-section {
+            padding: 60px 20px;
+            background-color: white;
+            margin: 0; /* Remove margin to create a seamless look */
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 0 0 10px 10px; /* Rounded bottom corners */
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.6s forwards;
+            position: relative;
+            z-index: 0; /* Ensure this is behind the header */
+        }
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .section-title {
+            font-size: 34px;
+            font-weight: bold;
+            color: #1a1a1d;
+            margin-bottom: 20px;
+        }
+        .project-image-1 {
+            width: 30%;
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.3s;
+            margin: auto;
+            display: block;
+        }
+        .project-image:hover {
+            transform: scale(1.05);
+        }
+        .skill-photo {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            transition: transform 0.3s;
+        }
+        .skill-photo:hover {
+            transform: scale(1.05);
+        }
+        .card {
+            margin-bottom: 20px;
+            transition: box-shadow 0.3s;
+        }
+        .card:hover {
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+        }
+        .btn-secondary {
+            background-color: #007bff;
+            border: none;
+            transition: background-color 0.3s;
+        }
+        .btn-secondary:hover {
+            background-color: #0056b3;
+        }
+        .project-image-2 {
+            width: 80%;
+            height: auto;
+            max-width: 600px;
+            margin: 0 auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header class="header">
+            <h1>Welcome to My Project</h1>
+            <p>Explore my web applications and learn more about my skills in UI/UX design and development!</p>
+            <p>
+                <a href="#project1">Project 1 - GSWITCH</a> | 
+                <a href="#project2">Project 2 - Belajar Yuk</a>
+            </p>
+        </header>
+
+        <section class="main-section" id="project1">
+            <h2 class="section-title">Project 1 - GSWITCH</h2>
+            <p>GSWITCH is a web application designed to provide a user-friendly interface. This project showcases my skills in web development and design.</p>
+
+            <div class="card">
+                <img src="image/gswicth.jpeg" alt="GSWITCH Project" class="project-image-1">
+                <div class="card-body">
+                    <h5 class="card-title">GSWITCH</h5>
+                    <p class="card-text">“GSWITCH” is a social media platform that focuses on finding online friends. It provides users to match with online friends who have similar interests.
+                        <ul>
+                            <li>
+                                Using design software such as Figma to design and develop UI prototypes for “GSWITCH”.
+                            </li>
+                            <li>
+                                Designing user interfaces focusing on user-friendly visuals.
+                            </li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+            <h3>Application Display Image</h3>
+            <br>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="image/gswicth.jpeg" alt="gswicth" class="skill-photo">
+                </div>
+                <div class="col-md-4">
+                    <img src="image/profil.jpeg" alt="profil" class="skill-photo">
+                </div>
+                <div class="col-md-4">
+                    <img src="image/login.jpeg" alt="login" class="skill-photo">
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col-md-4">
+                    <img src="image/tampilan.jpeg" alt="tampilan" class="skill-photo">
+                </div>
+                <div class="col-md-4">
+                    <img src="image/pencarian.jpeg" alt="pencarian" class="skill-photo">
+                </div>
+            </div>
+
+            <h2 class="section-title">Project 2 - Belajar Yuk</h2>
+            <p>Belajar Yuk is an application that can help users learn databases and simple programming</p>
+        
+            <div class="card" id="project2">
+                <br>
+                <img src="image/belajaryuk.png" alt="belajar yuk" class="project-image-2">
+                <div class="card-body">
+                    <h5 class="card-title">Belajar Yuk</h5>
+                    <p class="card-text">
+                        “Belajar Yuk” is an application that can help users learn databases and simple programming, where this application can be downloaded for free and users can learn anytime and anywhere.
+                        <ul>
+                            <li>
+                                Using design software such as Balsamiq to design and develop UI prototypes for “Belajar Yuk”.
+                            </li>
+                            <li>
+                                Designing user interfaces focusing on user-friendly visuals.
+                            </li>
+                        </ul>
+                    </p>
+                    <br>
+                    <h5 class="card-title">Story Board</h5>
+                    <br>
+                    <img src="image/storyboard.png" alt="Project" class="project-image-2">
+                </div>
+                <br>
+            </div>
+
+            <h3>Application Display Image</h3>
+            <br>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="image/logoby.png" alt="logo" class="skill-photo">
+                </div>
+                <div class="col-md-4">
+                    <img src="image/kategori.png" alt="kategori" class="skill-photo">
+                </div>
+                <div class="col-md-4">
+                    <img src="image/menu.png" alt="menu" class="skill-photo">
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col-md-4">
+                    <img src="image/bantuan.png" alt="bantuan" class="skill-photo">
+                </div>
+                <div class="col-md-4">
+                    <img src="image/tutorial.png" alt="tutorial" class="skill-photo">
+                </div>
+                <div class="col-md-4">
+                    <img src="image/referensi.png" alt="referensi" class="skill-photo">
+                </div>
+                <div class="col-md-4">
+                    <img src="image/video.png" alt="video" class="skill-photo">
+                </div>
+            </div>
+
+            <a href="portofolio.html" class="btn btn-secondary">Back</a>
+        </section>
+    </div>
+
+</body>
+</html>
